@@ -1,0 +1,44 @@
+{
+  "name": "@stdlib/stats-iter-cugmean",
+  "version": "0.0.0",
+  "description": "Create an iterator which iteratively computes a cumulative geometric mean.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./index.mjs",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/stats-iter-cugmean.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdmath",
+    "statistics",
+    "stats",
+    "mathematics",
+    "math",
+    "geometric",
+    "mean",
+    "average",
+    "avg",
+    "central tendency",
+    "product",
+    "prod",
+    "accumulate",
+    "cumulative mean",
+    "cumulative avg",
+    "cumulative",
+    "cgmean",
+    "cumgmean",
+    "iterator",
+    "iterable",
+    "iterate"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
