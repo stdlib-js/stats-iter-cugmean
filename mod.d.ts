@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2019 The Stdlib Authors.
@@ -16,16 +16,28 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 2.0
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
+
+import { Iterator as Iter, IterableIterator } from '@stdlib/types/iter';
+
+// Define a union type representing both iterable and non-iterable iterators:
+type Iterator = Iter | IterableIterator;
 
 /**
-* Create an iterator which iteratively computes a cumulative geometric mean.
+* Returns an iterator which iteratively computes a cumulative arithmetic geometric mean.
 *
-* @module @stdlib/stats-iter-cugmean
+* ## Notes
+*
+* -   If provided a negative value, the iterated value is `NaN` for all future invocations.
+* -   If an environment supports `Symbol.iterator`, the returned iterator is iterable.
+*
+* @param iterator - input iterator
+* @returns iterator
 *
 * @example
-* var runif = require( '@stdlib/random-iter-uniform' );
-* var itercugmean = require( '@stdlib/stats-iter-cugmean' );
+* var runif = require( `@stdlib/random/iter/uniform` );
 *
 * var rand = runif( 0.0, 10.0, {
 *     'iter': 100
@@ -44,12 +56,9 @@
 *
 * // ...
 */
-
-// MODULES //
-
-var iterator = require( './main.js' );
+declare function itercugmean( iterator: Iterator ): Iterator;
 
 
 // EXPORTS //
 
-module.exports = iterator;
+export = itercugmean;
