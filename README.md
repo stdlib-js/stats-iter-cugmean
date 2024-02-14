@@ -65,7 +65,7 @@ The [geometric mean][geometric-mean] is defined as the nth root of a product of 
 ## Usage
 
 ```javascript
-import itercugmean from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-cugmean@esm/index.mjs';
+import itercugmean from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-cugmean@v0.2.0-esm/index.mjs';
 ```
 
 #### itercugmean( iterator )
@@ -125,7 +125,7 @@ v = it.next().value;
 <script type="module">
 
 import runif from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-uniform@esm/index.mjs';
-import itercugmean from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-cugmean@esm/index.mjs';
+import itercugmean from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-cugmean@v0.2.0-esm/index.mjs';
 
 // Create an iterator for generating uniformly distributed pseudorandom numbers:
 var rand = runif( 0.0, 10.0, {
