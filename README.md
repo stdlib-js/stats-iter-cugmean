@@ -50,7 +50,7 @@ The [geometric mean][geometric-mean] is defined as the nth root of a product of 
     <br>
 </div> -->
 
-<!-- </equation> --> 
+<!-- </equation> -->
 
 </section>
 
@@ -215,7 +215,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
