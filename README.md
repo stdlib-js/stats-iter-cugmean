@@ -58,32 +58,38 @@ The [geometric mean][geometric-mean] is defined as the nth root of a product of 
 
 <!-- Package usage documentation. -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/stats-iter-cugmean
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
+To use in Observable,
+
 ```javascript
-var itercugmean = require( '@stdlib/stats-iter-cugmean' );
+itercugmean = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-cugmean@umd/browser.js' )
+```
+
+To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
+
+```javascript
+var itercugmean = require( 'path/to/vendor/umd/stats-iter-cugmean/index.js' )
+```
+
+To include the bundle in a webpage,
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-cugmean@umd/browser.js"></script>
+```
+
+If no recognized module system is present, access bundle contents via the global scope:
+
+```html
+<script type="text/javascript">
+(function () {
+    window.itercugmean;
+})();
+</script>
 ```
 
 #### itercugmean( iterator )
@@ -136,9 +142,14 @@ v = it.next().value;
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var runif = require( '@stdlib/random-iter-uniform' );
-var itercugmean = require( '@stdlib/stats-iter-cugmean' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-uniform@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-iter-cugmean@umd/browser.js"></script>
+<script type="text/javascript">
+(function () {
 
 // Create an iterator for generating uniformly distributed pseudorandom numbers:
 var rand = runif( 0.0, 10.0, {
@@ -160,6 +171,11 @@ while ( true ) {
         break;
     }
 }
+
+})();
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -267,9 +283,9 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/stats/iter/cuhmean]: https://github.com/stdlib-js/stats-iter-cuhmean
+[@stdlib/stats/iter/cuhmean]: https://github.com/stdlib-js/stats-iter-cuhmean/tree/umd
 
-[@stdlib/stats/iter/cumean]: https://github.com/stdlib-js/stats-iter-cumean
+[@stdlib/stats/iter/cumean]: https://github.com/stdlib-js/stats-iter-cumean/tree/umd
 
 <!-- </related-links> -->
 
